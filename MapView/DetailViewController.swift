@@ -31,15 +31,15 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate {
         
         let longitude = NSString(string: cities[activeCity]["lon"]!).doubleValue
         
-        var coordinate = CLLocationCoordinate2DMake(latitude, longitude)
+        let coordinate = CLLocationCoordinate2DMake(latitude, longitude)
         
-        var latDelta:CLLocationDegrees = 5.0
+        let latDelta:CLLocationDegrees = 5.0
         
-        var lonDelta:CLLocationDegrees = 5.0
+        let lonDelta:CLLocationDegrees = 5.0
         
-        var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
+        let span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
         
-        var region:MKCoordinateRegion = MKCoordinateRegionMake(coordinate, span)
+        let region:MKCoordinateRegion = MKCoordinateRegionMake(coordinate, span)
         
         self.map.setRegion(region, animated: true)
 

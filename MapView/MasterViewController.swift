@@ -23,10 +23,10 @@ class MasterViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let path = NSBundle.mainBundle().pathForResource("cities", ofType: "txt")
         
-        var text = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: nil)!
+        let text = try! String(contentsOfFile: path!, encoding: NSUTF8StringEncoding)
         
         var textArray = text.componentsSeparatedByString("\n")
         
@@ -79,7 +79,7 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) 
         
         cell.textLabel?.text = cities[indexPath.row]["name"]
 

@@ -15,6 +15,9 @@
 		CF365B1E1BB2249600EF9B73 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF365B1C1BB2249600EF9B73 /* LaunchScreen.xib */; };
 		CF365B2A1BB2249600EF9B73 /* MapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF365B291BB2249600EF9B73 /* MapViewTests.swift */; };
 		CF365B381BB25B6E00EF9B73 /* cities.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF365B371BB25B6E00EF9B73 /* cities.txt */; };
+		CF50DA471BB39035001DB6BD /* map_icon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = CF50DA441BB39035001DB6BD /* map_icon_120.png */; };
+		CF50DA481BB39035001DB6BD /* map_icon_180.png in Resources */ = {isa = PBXBuildFile; fileRef = CF50DA451BB39035001DB6BD /* map_icon_180.png */; };
+		CF50DA491BB39035001DB6BD /* map_icon_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = CF50DA461BB39035001DB6BD /* map_icon_1024.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		CF365B281BB2249600EF9B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF365B291BB2249600EF9B73 /* MapViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewTests.swift; sourceTree = "<group>"; };
 		CF365B371BB25B6E00EF9B73 /* cities.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cities.txt; sourceTree = "<group>"; };
+		CF50DA441BB39035001DB6BD /* map_icon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_icon_120.png; sourceTree = "<group>"; };
+		CF50DA451BB39035001DB6BD /* map_icon_180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_icon_180.png; sourceTree = "<group>"; };
+		CF50DA461BB39035001DB6BD /* map_icon_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_icon_1024.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,9 @@
 		CF365B0E1BB2249600EF9B73 /* MapView */ = {
 			isa = PBXGroup;
 			children = (
+				CF50DA441BB39035001DB6BD /* map_icon_120.png */,
+				CF50DA451BB39035001DB6BD /* map_icon_180.png */,
+				CF50DA461BB39035001DB6BD /* map_icon_1024.png */,
 				CF365B371BB25B6E00EF9B73 /* cities.txt */,
 				CF365B111BB2249600EF9B73 /* AppDelegate.swift */,
 				CF365B131BB2249600EF9B73 /* MasterViewController.swift */,
@@ -162,6 +171,8 @@
 		CF365B041BB2249600EF9B73 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = JBC;
 				TargetAttributes = {
@@ -199,9 +210,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF365B191BB2249600EF9B73 /* Main.storyboard in Resources */,
+				CF50DA481BB39035001DB6BD /* map_icon_180.png in Resources */,
 				CF365B381BB25B6E00EF9B73 /* cities.txt in Resources */,
 				CF365B1E1BB2249600EF9B73 /* LaunchScreen.xib in Resources */,
 				CF365B1B1BB2249600EF9B73 /* Images.xcassets in Resources */,
+				CF50DA491BB39035001DB6BD /* map_icon_1024.png in Resources */,
+				CF50DA471BB39035001DB6BD /* map_icon_120.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +431,7 @@
 				CF365B2F1BB2249600EF9B73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF365B301BB2249600EF9B73 /* Build configuration list for PBXNativeTarget "MapViewTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +440,7 @@
 				CF365B321BB2249600EF9B73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
